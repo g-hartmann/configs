@@ -111,3 +111,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+PS1="\[\e[92m\]\u\[\e[m\]@\[\e[92m\]\h\[\e[m\]>\[\e[36m\]\w\[\e[m\]\[\e[31m\]\\$\[\e[m\]> "
