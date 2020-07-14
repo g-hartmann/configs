@@ -112,4 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_rsa
+
 PS1="\[\e[32m\]\u\[\e[m\]\[\e[90m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]\[\e[90m\]>\[\e[m\]\[\e[36m\]\w\[\e[m\]\[\e[31m\]\\$\[\e[m\]\[\e[92m\]>\[\e[m\] "
