@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-python/python-syntax'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -44,12 +45,14 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on
-colo torte
+colo koehler
 set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
    
+let g:python_highlight_all = 1
+
 function! GitBranch()
 	return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
 endfunction
