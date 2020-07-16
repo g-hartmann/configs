@@ -112,6 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+neofetch
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_rsa
 
