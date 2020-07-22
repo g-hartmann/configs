@@ -112,11 +112,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PS1="\[\033[38;5;8m\][\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\u\[$(tput sgr0)\]\[\033[38;5;8m\]@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]>\[$(tput sgr0)\] \W \[$(tput sgr0)\]\[\033[38;5;8m\]]\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;8m\][\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\u\[$(tput sgr0)\]\[\033[38;5;8m\]@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;8m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\W\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;8m\]]\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
-echo ""
-echo ""
-neofetch --ascii_distro BlackArch
+export EDITOR=/usr/bin/vim
 
-eval $(ssh-agent)
-ssh-add ~/.ssh/id_rsa
+alias ssh_add='bash /home/ghartmann/.ssh/ssh-add.sh'
