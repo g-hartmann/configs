@@ -112,7 +112,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PS1="\[\033[38;5;8m\][\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\u\[$(tput sgr0)\]\[\033[38;5;8m\]@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;8m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\W\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;8m\]]\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;1m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;8m\][\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]\[\033[38;5;8m\]@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;8m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;10m\]\W\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;8m\]]\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;10m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
 export EDITOR=/usr/bin/vim
 
